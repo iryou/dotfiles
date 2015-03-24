@@ -37,6 +37,22 @@ highlight CursorLine cterm=underline ctermfg=NONE ctermbg=NONE
 " アンダーラインを引く(gui)
 highlight CursorLine gui=underline guifg=NONE guibg=NONE
 
+" インクリメンタルサーチを行う
+set incsearch
+" 大文字と小文字を区別しない
+set noignorecase
+ " 大文字と小文字が混在した言葉で検索を行った場合に限り、大文字と小文字を区別する 
+set smartcase
+
+" 検索結果をハイライト表示
+set hlsearch
+" Esc Esc でハイライトOFF
+" nnoremap <Esc><Esc> :<C-u>set nohlsearch<Return>
+
+" 挿入モード時、日本語入力をOFFで始める。
+"set iminsert=0
+"set imsearch=0
+
 " マウス
 set mouse=a
 set ttymouse=xterm2
