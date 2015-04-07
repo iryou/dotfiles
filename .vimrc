@@ -16,6 +16,7 @@ call neobundle#end()
 " Tabのスペース数
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
 
 " 行数表示
 set number
@@ -49,13 +50,16 @@ set shortmess+=I
 set list
 
 " タブとか改行を示す文字列 eol(改行)は背景色違いのスペースにする。
-set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+set listchars=tab:»»,eol:↲,extends:»,precedes:«,nbsp:%
 
 " 単語を途中で折らない
 set linebreak
 
 " コードの色分け
 syntax on
+
+" 折り返さない
+set nowrap
 
 "---------------------------------------------------------------------------
 " 検索
